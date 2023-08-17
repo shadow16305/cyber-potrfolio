@@ -1,0 +1,6 @@
+.header {
+  background-image: url("/src/assets/images/red-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}

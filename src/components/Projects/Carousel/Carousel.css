@@ -1,0 +1,70 @@
+@media (min-width: 1000px) {
+  .img-Hover__btn a {
+    position: relative;
+    color: var(--def);
+    font-size: 16px;
+    letter-spacing: 0.3rem;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+    padding: 16px 32px;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: "blender_probold";
+  }
+
+  .img-Hover__btn a::after,
+  .img-Hover__btn a::before {
+    content: "";
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+
+  .img-Hover__btn {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    --inv: #ff0054;
+    --def: #fff;
+  }
+
+  .img-Hover__btn a:hover {
+    color: var(--def);
+    transition-delay: 0.1s;
+  }
+
+  .img-Hover__btn a:hover:before {
+    transition-delay: 0s;
+  }
+
+  .img-Hover__btn a:hover:after {
+    background: var(--inv);
+    transition-delay: 0.1s;
+  }
+
+  .img-Hover__btn a:before {
+    top: 0;
+    border: 1px solid var(--def);
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .img-Hover__btn a:after {
+    bottom: 0;
+    height: 0;
+  }
+
+  .img-Hover__btn a:hover:before,
+  .img-Hover__btn a:hover:after {
+    height: 100%;
+  }
+
+  .img_container:hover .img-Hover__btn {
+    display: flex;
+    opacity: 1;
+  }
+}

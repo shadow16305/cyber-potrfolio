@@ -1,0 +1,21 @@
+.footer {
+  background-image: url("/src/assets/images/bgFooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-image: url("/src/assets/images/contactBGMobile.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    background-image: url("/src/assets/images/contactBGTablet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

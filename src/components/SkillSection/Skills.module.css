@@ -1,0 +1,22 @@
+@media (min-width: 1000px) {
+  .skillsBg {
+    background-image: url("/src/assets/images/skills-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 500px) {
+  .skillsBg {
+    background-image: url("/src/assets/images/skillsBGMObile.png") !important;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  .skillsBg {
+    background-image: url("/src/assets/images/skillsBGTablet.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
